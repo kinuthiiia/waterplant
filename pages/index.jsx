@@ -19,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     retrieveLogs()
       .then(setLogs)
-      .finally(() => setTimeout(() => setRefreshToken(Math.random()), 5000));
+      .finally(() => setTimeout(() => setRefreshToken(Math.random()), 2000));
   }, [refreshToken]);
 
   return (
